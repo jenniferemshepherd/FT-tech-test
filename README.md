@@ -1,9 +1,9 @@
 # Cloud Engineer Technical Exercise
 
-```User Stories
+User Stories
 _____________
 
-As a User
+```As a User
 So that I can share my experience of the ft website with their developers
 I would like to leave a rating
 
@@ -20,3 +20,8 @@ I would like to store it```
 So that I can compare my experience with others' after I have left a rating
 I would like to view all of the ratings left
 ```
+
+##Process
+
+Having diagrammed the simple app and thought about all the things at play, I decided to use Ruby.  It was important to me that I test-drove the app and I feel most confident and experienced doing this in Ruby.
+First I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations.  It was important to me to hit MVP so I focussed on the first requirements, planning to extend later with the optional extras.
