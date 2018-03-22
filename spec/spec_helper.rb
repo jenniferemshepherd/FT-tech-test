@@ -1,6 +1,6 @@
 ENV['RACK_ENV'] = 'test'
 
-require '../rate_the_ft.rb'
+require './rate_ft.rb'
 
 require 'capybara'
 require 'capybara/rspec'
