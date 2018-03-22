@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class RateFT < Sinatra::Base
   get '/' do
-    'Please share your experience with us'
+    erb :'index'
   end
 
   run! if app_file == $0
