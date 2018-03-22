@@ -33,4 +33,4 @@ I would like to view all of the ratings left
 
 * Rubocop was installed to ensure I didn't overlook any untidy code
 
-* 
+* The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them did
