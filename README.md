@@ -31,4 +31,6 @@ I would like to view all of the ratings left
 
 * I test drove the homepage and refactored it into views
 
+* Rubocop was installed to ensure I didn't overlook any untidy code
+
 * 
