@@ -1,3 +1,3 @@
-require_relative "./rate_the_ft"
+require "./app/rate_ft.rb"
 
 run RateFT
