@@ -23,5 +23,12 @@ I would like to view all of the ratings left
 
 ##Process
 
-Having diagrammed the simple app and thought about all the things at play, I decided to use Ruby.  It was important to me that I test-drove the app and I feel most confident and experienced doing this in Ruby.
-First I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations.  It was important to me to hit MVP so I focussed on the first requirements, planning to extend later with the optional extras.
+* Having diagrammed the simple app and thought about all the things at play, I decided to use Ruby.  It was important to me that I test-drove the app and I feel most confident and experienced doing this in Ruby.
+
+* First I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations.  It was important to me to hit MVP so I focussed on the first requirements, planning to extend later with the optional extras.
+
+* I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
+
+* I test drove the homepage and refactored it into views
+
+* 
