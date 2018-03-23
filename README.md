@@ -33,4 +33,6 @@ I would like to view all of the ratings left
 
 * Rubocop was installed to ensure I didn't overlook any untidy code
 
-* The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them did
+* The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form)
+
+* I knew I needed to have the ratings stored in a database, so I'd need a Rating model.  I TDD'd this too.

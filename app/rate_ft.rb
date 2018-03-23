@@ -5,5 +5,14 @@ class RateFT < Sinatra::Base
     erb(:index)
   end
 
+  post '/ratings' do
+    p 'gets the request'
+    redirect '/thanks'
+  end
+
+  get '/thanks' do
+    erb(:thanks)
+  end
+
   run! if app_file == $0
 end
