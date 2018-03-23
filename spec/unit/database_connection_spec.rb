@@ -13,7 +13,11 @@ describe DatabaseConnection do
     end
   end
 
-  # describe '.query' do
-  #
-  # end
+  describe '.query' do
+    it 'executes a query via PG' do
+      connection = DatabaseConnection.setup('ft_ratings_test')
+      expect(connection).to receive(:exec).with("SELECT * FROM ratings;")
+      DatabaseConnection.query("SELECT * FROM ratings;")
+    end
+  end
 end
