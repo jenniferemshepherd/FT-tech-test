@@ -7,13 +7,13 @@ _____________
 So that I can share my experience of the ft website with their developers
 I would like to leave a rating
 
-As an external User
-So that I can leave my rating even though I don't work at the ft
-I would like to leave my rating on a website hosted in the cloud
-
 As an ft employee
 So that I can make use of the ratings data
-I would like to store it```
+I would like to store it
+
+As an external User
+So that I can leave my rating even though I don't work at the ft
+I would like to leave my rating on a website hosted in the cloud```
 
 
 ```As a User
@@ -29,10 +29,10 @@ I would like to view all of the ratings left
 
 * I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
 
-* I test drove the homepage and refactored it into views
+* I test drove the homepage and refactored it into views.
 
-* Rubocop was installed to ensure I didn't overlook any untidy code
+* Rubocop was installed to ensure I didn't overlook any untidy code.
 
-* The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form)
+* The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form).
 
-* After submitting a rating, the user is redirected and thanked with the option to return to the ratings page
+* After submitting a rating, the user is redirected and thanked with the option to return to the ratings page.
