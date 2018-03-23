@@ -12,12 +12,15 @@ class RateFT < Sinatra::Base
   end
 
   post '/ratings' do
-    session[:score] = params[:score]
+    # session[:score] = params[:score]
+    connection = PG.connect(dbname: 'ft_ratings_test')
+    connection.exec("INSERT INTO ratings (score) VALUES(#{params[:score]});")
+    p "has been stored in the database"
     redirect '/thanks'
   end
 
   get '/thanks' do
-    @score = session[:score]
+    # @score = session[:score]
     @ratings = Rating.all
     erb(:thanks)
   end

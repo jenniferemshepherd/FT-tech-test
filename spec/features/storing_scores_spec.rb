@@ -13,4 +13,10 @@ feature 'viewing scores' do
     expect(page).to have_content "-2"
     expect(page).to have_content "0"
   end
+
+  scenario 'A users score is stored in the database' do
+    visit('/')
+    click_button(-1)
+    expect(page).to have_content "-1"
+  end
 end
