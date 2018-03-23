@@ -1,3 +1,3 @@
-require "./app/rate_ft.rb"
+require "./app/app.rb"
 
 run RateFT
