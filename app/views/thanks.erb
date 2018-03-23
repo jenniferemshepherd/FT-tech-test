@@ -5,11 +5,20 @@ Thanks for sharing your experience with us by leaving a score of: <%= @your_scor
   <button name="return" type="submit">Return</button>
 </form>
 
+<% @score_minus_two = @ratings.count(-2) %>
+<% @score_minus_one = @ratings.count(-1) %>
+<% @score_zero = @ratings.count(0) %>
+<% @score_one = @ratings.count(1) %>
+<% @score_two = @ratings.count(2) %>
+<% @total = @ratings.length %>
+
 Previous ratings:
 <ul>
-  <% @ratings.each do |score| %>
-    <li><%= score %></li>
-  <% end %>
+  <li>Very Good: <%= (@score_two * 100 / @ratings.length) %>%</li>
+  <li>Good: <%= (@score_one * 100 / @ratings.length) %>%</li>
+  <li>Average: <%= (@score_zero * 100 / @ratings.length) %>%</li>
+  <li>Bad: <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
+  <li>Very Bad: <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
 </ul>
 
 
