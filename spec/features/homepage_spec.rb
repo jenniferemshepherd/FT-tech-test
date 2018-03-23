@@ -15,4 +15,10 @@ feature 'Ratings Home Page' do
     click_button(0)
     expect(page).to have_content('Thanks for sharing your experience with us')
   end
+
+  scenario 'the thanks page has a button to return to the homepage' do
+    visit '/'
+    click_button(0)
+    expect(page).to have_content('Return')
+  end
 end

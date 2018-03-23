@@ -6,7 +6,6 @@ class RateFT < Sinatra::Base
   end
 
   post '/ratings' do
-    p 'gets the request'
     redirect '/thanks'
   end
 

@@ -35,4 +35,4 @@ I would like to view all of the ratings left
 
 * The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form)
 
-* I knew I needed to have the ratings stored in a database, so I'd need a Rating model.  I TDD'd this too.
+* After submitting a rating, the user is redirected and thanked with the option to return to the ratings page
