@@ -8,5 +8,3 @@ connection.exec("TRUNCATE ratings")
 
 connection.exec("INSERT INTO ratings (score) VALUES(1);")
 connection.exec("INSERT INTO ratings (score) VALUES(2);")
-connection.exec("INSERT INTO ratings (score) VALUES(-2);")
-connection.exec("INSERT INTO ratings (score) VALUES(0);")
