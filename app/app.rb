@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require './app/models/rating'
 
 class RateFT < Sinatra::Base
 
@@ -17,7 +18,7 @@ class RateFT < Sinatra::Base
 
   get '/thanks' do
     @score = session[:score]
-    @ratings = [1,2,-2,0]
+    @ratings = Rating.all
     erb(:thanks)
   end
 
