@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require './app/models/rating'
+require './database_connection_setup'
 
 class RateFT < Sinatra::Base
 
