@@ -15,6 +15,7 @@ class RateFT < Sinatra::Base
   end
 
   get '/thanks' do
+    @your_score = Rating.all.last
     @ratings = Rating.all
     erb(:thanks)
   end
