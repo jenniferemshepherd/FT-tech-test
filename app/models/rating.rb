@@ -14,8 +14,12 @@ class Rating
   end
 
   def self.create(score)
-    connection = PG.connect(dbname: 'ft_ratings_test')
-    result = connection.exec("INSERT INTO ratings (score) VALUES(#{score})")
+    if ENV['RACK_ENV'] == 'test'
+      connection = PG.connect(dbname: 'ft_ratings_test')
+    else
+      connection = PG.connect(dbname: 'ft_ratings')
+    end
+    connection.exec("INSERT INTO ratings (score) VALUES(#{score})")
   end
 
 end
