@@ -12,13 +12,13 @@ feature 'Ratings Home Page' do
 
   scenario 'leaving a score' do
     visit '/'
-    click_button(0)
+    click_button(1)
     expect(page).to have_content('Thanks for sharing your experience with us')
   end
 
   scenario 'the thanks page can return a user to the homepage' do
     visit '/'
-    click_button(0)
+    click_button(1)
     click_button('Return')
     expect(current_url).to have_content('/')
   end

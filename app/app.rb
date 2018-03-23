@@ -6,6 +6,8 @@ class RateFT < Sinatra::Base
   end
 
   post '/ratings' do
+    score = params[:score]
+    p score
     redirect '/thanks'
   end
 
