@@ -3,7 +3,9 @@ require 'pg'
 class Rating
 
   def self.all
-    [1,2,-2,0]
+    connection = PG.connect(dbname: 'ft_ratings')
+    result = connection.exec("SELECT * FROM ratings")
+    result.map { |rating| rating['score'].to_i }
   end
 
   # def self.create(3)
