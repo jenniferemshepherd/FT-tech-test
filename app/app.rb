@@ -17,7 +17,7 @@ class RateFT < Sinatra::Base
 
   get '/thanks' do
     @score = session[:score]
-    p @score
+    @ratings = [1,2,-2,0]
     erb(:thanks)
   end
 

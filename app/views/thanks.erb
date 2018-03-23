@@ -4,4 +4,13 @@ Thanks for sharing your experience with us by leaving a score of: <%= @score %>
 <form action="/">
   <button name="return" type="submit">Return</button>
 </form>
+
+Previous ratings:
+<ul>
+  <% @ratings.each do |score| %>
+    <li><%= score %></li>
+  <% end %>
+</ul>
+
+
 </html>
