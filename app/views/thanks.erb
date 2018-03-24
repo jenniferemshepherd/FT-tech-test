@@ -6,6 +6,10 @@
   <style>
   body {
     background-color: #FFF1E5;
+    margin: 0;
+  }
+  ul {
+  	list-style: none;
   }
   </style>
 </head>
@@ -39,12 +43,12 @@
 
           <h4 class="o-typography-product-heading-level-5">Previous ratings:</h4>
           <h3 class="o-typography-product-heading-level-6">
-            <ul>
-              <li>Very Good: <%= (@score_two * 100 / @ratings.length) %>%</li>
-              <li>Good: <%= (@score_one * 100 / @ratings.length) %>%</li>
-              <li>Average: <%= (@score_zero * 100 / @ratings.length) %>%</li>
-              <li>Bad: <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
-              <li>Very Bad: <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
+            <ul class="o-typography-list o-typography-list--unordered">
+              <li>Oustanding:           <%= (@score_two * 100 / @ratings.length) %>%</li>
+              <li>Above average:        <%= (@score_one * 100 / @ratings.length) %>%</li>
+              <li>Average:              <%= (@score_zero * 100 / @ratings.length) %>%</li>
+              <li>Disappointing:         <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
+              <li>Well below expectations:    <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
             </ul>
           </h3>
         </div>

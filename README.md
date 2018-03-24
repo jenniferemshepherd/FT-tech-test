@@ -36,3 +36,11 @@ I would like to view all of the ratings left
 * The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form).
 
 * After submitting a rating, the user is redirected and thanked with the option to return to the ratings page.
+
+* there is no test for the rating create method...
+
+* DB development
+
+* styling using HTML/CSS from Origami.  tutorial showed buttons.  moved onto header, background, fonts, margins, lists etc.
+
+* aws: used a tutorial to learn how to deploy an app using docker.  had to install python to get the aws cli tool
