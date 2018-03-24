@@ -1,8 +1,13 @@
 <html>
 <head>
   <title>Rate FT.com</title>
-  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,o-header-services@^2.0.5"></script>
-  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4"/>
+  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,o-header-services@^2.0.5,o-typography@^5.6.0,o-colors@^4.2.3"></script>
+  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4,o-typography@^5.6.0,o-colors@^4.2.3"/>
+  <style>
+  body {
+    background-color: #FFF1E5;
+  }
+  </style>
 </head>
 
 <header class="o-header-services" data-o-component="o-header">
@@ -14,6 +19,7 @@
 	</div>
 </header>
 
+<body>
 <h2 class="o-typography-product-heading-level-1">Thanks for sharing your experience with us by leaving a score of: <%= @your_score %></h2>
 
 <form action="/">
@@ -27,13 +33,16 @@
 <% @score_two = @ratings.count(2) %>
 <% @total = @ratings.length %>
 
-Previous ratings:
-<ul>
-  <li>Very Good: <%= (@score_two * 100 / @ratings.length) %>%</li>
-  <li>Good: <%= (@score_one * 100 / @ratings.length) %>%</li>
-  <li>Average: <%= (@score_zero * 100 / @ratings.length) %>%</li>
-  <li>Bad: <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
-  <li>Very Bad: <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
-</ul>
+<h4 class="o-typography-product-heading-level-4">Previous ratings:</h4>
 
+<h3 class="o-typography-product-heading-level-6">
+  <ul>
+    <li>Very Good: <%= (@score_two * 100 / @ratings.length) %>%</li>
+    <li>Good: <%= (@score_one * 100 / @ratings.length) %>%</li>
+    <li>Average: <%= (@score_zero * 100 / @ratings.length) %>%</li>
+    <li>Bad: <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
+    <li>Very Bad: <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
+  </ul>
+</h3>
+</body>
 </html>
