@@ -1,8 +1,8 @@
 <html>
 <head>
   <title>Rate FT.com</title>
-  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,o-header-services@^2.0.5,o-typography@^5.6.0,o-colors@^4.2.3"></script>
-  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4,o-typography@^5.6.0,o-colors@^4.2.3"/>
+  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,o-header-services@^2.0.5,o-typography@^5.6.0,o-colors@^4.2.3,o-grid@^4.3.8"></script>
+  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4,o-typography@^5.6.0,o-colors@^4.2.3,o-grid@^4.3.8"/>
   <style>
   body {
     background-color: #FFF1E5;
@@ -19,13 +19,6 @@
 	</div>
 </header>
 
-<body>
-<h2 class="o-typography-product-heading-level-1">Thanks for sharing your experience with us by leaving a score of: <%= @your_score %></h2>
-
-<form action="/">
-  <button class="o-buttons o-buttons--secondary" name="return" type="submit">Return</button>
-</form>
-
 <% @score_minus_two = @ratings.count(-2) %>
 <% @score_minus_one = @ratings.count(-1) %>
 <% @score_zero = @ratings.count(0) %>
@@ -33,16 +26,29 @@
 <% @score_two = @ratings.count(2) %>
 <% @total = @ratings.length %>
 
-<h4 class="o-typography-product-heading-level-4">Previous ratings:</h4>
+  <body>
+    <article>
+    <div class="o-grid-row">
+  		<div data-o-grid-colspan="12 S11 Scenter M9">
+        <br>
+          <h2 class="o-typography-product-heading-level-3">Thanks for sharing your experience with us by leaving a score of:  <%= @your_score %></h2>
 
-<h3 class="o-typography-product-heading-level-6">
-  <ul>
-    <li>Very Good: <%= (@score_two * 100 / @ratings.length) %>%</li>
-    <li>Good: <%= (@score_one * 100 / @ratings.length) %>%</li>
-    <li>Average: <%= (@score_zero * 100 / @ratings.length) %>%</li>
-    <li>Bad: <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
-    <li>Very Bad: <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
-  </ul>
-</h3>
-</body>
+        <form action="/">
+          <button class="o-buttons o-buttons--secondary" name="return" type="submit">Return</button>
+        </form>
+
+          <h4 class="o-typography-product-heading-level-5">Previous ratings:</h4>
+          <h3 class="o-typography-product-heading-level-6">
+            <ul>
+              <li>Very Good: <%= (@score_two * 100 / @ratings.length) %>%</li>
+              <li>Good: <%= (@score_one * 100 / @ratings.length) %>%</li>
+              <li>Average: <%= (@score_zero * 100 / @ratings.length) %>%</li>
+              <li>Bad: <%= (@score_minus_one * 100/ @ratings.length) %>%</li>
+              <li>Very Bad: <%= (@score_minus_two * 100/ @ratings.length) %>%</li>
+            </ul>
+          </h3>
+        </div>
+      </div>
+    </article>
+  </body>
 </html>

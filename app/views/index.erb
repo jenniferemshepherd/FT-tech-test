@@ -2,8 +2,8 @@
 
 <head>
   <title>Rate FT.com</title>
-  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,o-header-services@^2.0.5,o-typography@^5.6.0,o-colors@^4.2.3"></script>
-  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4,o-typography@^5.6.0,o-colors@^4.2.3"/>
+  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,o-header-services@^2.0.5,o-typography@^5.6.0,o-colors@^4.2.3,o-grid@^4.3.8"></script>
+  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4,o-typography@^5.6.0,o-colors@^4.2.3,o-grid@^4.3.8"/>
   <style>
   body {
     background-color: #FFF1E5;
@@ -21,16 +21,22 @@
 </header>
 
 <body>
-  <h2 class="o-typography-product-heading-level-1">Please share your experience with us:</h2>
+  <article>
+    <div class="o-grid-row">
+  		<div data-o-grid-colspan="12 S11 Scenter M9">
+        <br>
+        <h2 class="o-typography-product-heading-level-3">Please share your experience with us:</h2>
 
-<form class='buttons' action="/ratings" method="post">
-  <button class="o-buttons o-buttons--secondary" name="score" id="b-2" type="submit" value="-2">-2</button>
-  <button class="o-buttons o-buttons--secondary" name="score" id="b-1" type="submit" value="-1">-1</button>
-  <button class="o-buttons o-buttons--secondary" name="score" id="b0" type="submit" value="0">0</button>
-  <button class="o-buttons o-buttons--secondary" name="score" id="b1" type="submit" value="1">1</button>
-  <button class="o-buttons o-buttons--secondary" name="score" id="b2" type="submit" value="2">2</button>
-</form>
-
+        <form class='buttons' action="/ratings" method="post">
+          <button class="o-buttons o-buttons--secondary" name="score" id="b-2" type="submit" value="-2">-2</button>
+          <button class="o-buttons o-buttons--secondary" name="score" id="b-1" type="submit" value="-1">-1</button>
+          <button class="o-buttons o-buttons--secondary" name="score" id="b0" type="submit" value="0">0</button>
+          <button class="o-buttons o-buttons--secondary" name="score" id="b1" type="submit" value="1">1</button>
+          <button class="o-buttons o-buttons--secondary" name="score" id="b2" type="submit" value="2">2</button>
+        </form>
+      </div>
+    </div>
+  </article>
 </body>
 
 </html>
