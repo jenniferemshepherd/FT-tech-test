@@ -2,11 +2,22 @@
 
 <head>
   <title>Rate FT.com</title>
-  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons"></script>
-  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons" />
+  <script async type="javascript" src="https://www.ft.com/__origami/service/build/v2/bundles/js?modules=o-buttons,
+  o-header-services@^2.0.5",
+  o-typography@^5.6.0></script>
+  <link rel="stylesheet" href="https://www.ft.com/__origami/service/build/v2/bundles/css?modules=o-buttons,o-header-services@^2.0.5,o-fonts@^3.0.4",o-typography@^5.6.0/>
 </head>
 
-<h1>Please share your experience with us<h1>
+<header class="o-header-services" data-o-component="o-header">
+	<div class="o-header-services__top o-header-services__container">
+		<div class="o-header-services__ftlogo"></div>
+		<div class="o-header-services__title">
+			<h1 class="o-header-services__product-name"><a href="/">Rate FT.com</a></h1>
+		</div>
+	</div>
+</header>
+
+  <h2 class="o-typography-product-heading-level-1">Please share your experience with us:</h2>
 
 <form class='buttons' action="/ratings" method="post">
   <button class="o-buttons o-buttons--secondary" name="score" id="b-2" type="submit" value="-2">-2</button>
