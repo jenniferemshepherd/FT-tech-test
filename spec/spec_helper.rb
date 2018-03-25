@@ -5,7 +5,10 @@ require 'features/web_helpers'
 
 require 'capybara'
 require 'capybara/rspec'
+require 'rake'
 require 'rspec'
+
+Rake.application.load_rakefile
 
 Capybara.app = RateFT
 
@@ -27,7 +30,7 @@ Capybara.app = RateFT
 RSpec.configure do |config|
 
   config.before(:each) do
-    require_relative './test_database_setup'
+    Rake::Task['test_database_setup'].execute
   end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
