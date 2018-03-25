@@ -1,14 +1,16 @@
 require 'pg'
 
-task :migrate do
-  p "Cleaning database..."
+namespace :db do
+  task :migrate do
+    p "Cleaning database..."
 
-  connection = PG.connect(dbname: 'ft_ratings_test')
+    connection = PG.connect(dbname: 'ft_ratings_test')
 
-  connection.exec("TRUNCATE ratings;")
+    connection.exec("TRUNCATE ratings;")
 
-  connection.exec("INSERT INTO ratings (score) VALUES(1);")
-  connection.exec("INSERT INTO ratings (score) VALUES(2);")
+    connection.exec("INSERT INTO ratings (score) VALUES(1);")
+    connection.exec("INSERT INTO ratings (score) VALUES(2);")
+  end
 end
 
 # task :setup do
