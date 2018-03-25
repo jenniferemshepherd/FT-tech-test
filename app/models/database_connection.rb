@@ -2,7 +2,7 @@ class DatabaseConnection
 
   def self.setup(database)
     p dbname:database
-    @connection = PG.connect(dbname: database)
+    @connection = PG.connect(database)
   end
 
   def self.connection
