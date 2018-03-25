@@ -8,7 +8,7 @@ class RateFT < Sinatra::Base
   run! if app_file == $0
 
   get '/' do
-    erb(:hello)
+    erb(:index)
   end
 
   post '/ratings' do
