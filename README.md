@@ -3,7 +3,8 @@
 User Stories
 _____________
 
-```As a User
+```
+As a User
 So that I can share my experience of the ft website with their developers
 I would like to leave a rating
 
@@ -13,19 +14,26 @@ I would like to store it
 
 As an external User
 So that I can leave my rating even though I don't work at the ft
-I would like to leave my rating on a website hosted in the cloud```
+I would like to leave my rating on a website hosted in the cloud
+```
 
 
-```As a User
+```
+As a User
 So that I can compare my experience with others' after I have left a rating
 I would like to view all of the ratings left
 ```
 
-##Process
 
-* Having diagrammed the simple app and thought about all the things at play, I decided to use Ruby.  It was important to me that I test-drove the app and I feel most confident and experienced doing this in Ruby.
+## Overall Process
 
-* First I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations.  It was important to me to hit MVP so I focussed on the first requirements, planning to extend later with the optional extras.
+
+
+## Process
+
+* Having diagrammed the simple app and thought about all the things at play, I decided to use Ruby.  It was important to test-drive the app and I feel most confident and experienced doing this in Ruby.
+
+* First I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations. I focussed on the first requirements to hit MVP, planning to extend later with the optional extras.
 
 * I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
 
@@ -34,10 +42,6 @@ I would like to view all of the ratings left
 * Rubocop was installed to ensure I didn't overlook any untidy code.
 
 * The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form).
-
-* After submitting a rating, the user is redirected and thanked with the option to return to the ratings page.
-
-* there is no test for the rating create method...
 
 * DB development
 
