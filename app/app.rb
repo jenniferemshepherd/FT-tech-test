@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'sinatra/sequel'
 require './app/models/rating'
 require './database_connection_setup'
 
