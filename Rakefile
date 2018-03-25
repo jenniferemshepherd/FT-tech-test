@@ -1,5 +1,5 @@
 require 'pg'
-# require './app/app.rb'
+require './app/app.rb'
 
 task :test_database_setup do
   p "Cleaning database..."
