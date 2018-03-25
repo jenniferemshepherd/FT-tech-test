@@ -22,5 +22,5 @@ end
 #       connection = PG.connect(dbname: database)
 #       connection.exec("CREATE TABLE ratings(id SERIAL PRIMARY KEY, score int);")
 #     end
-#   end
-end
+# #   end
+# end
