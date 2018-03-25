@@ -1,5 +1,7 @@
 # Cloud Engineer Technical Exercise
 
+[![Build Status](https://travis-ci.org/jenniferemshepherd/FT-tech-test.svg?branch=master)](https://travis-ci.org/jenniferemshepherd/FT-tech-test)
+
 User Stories
 _____________
 
