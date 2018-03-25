@@ -29,7 +29,7 @@ Capybara.app = RateFT
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   config.before(:all) do
-    Rake::Task['db:create'].execute
+    Rake::Task['create_table'].execute
   end
 
   config.before(:each) do

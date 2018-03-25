@@ -20,6 +20,14 @@ task :test_database_setup do
   connection.exec("INSERT INTO ratings (score) VALUES(2);")
 end
 
+task :create_table do
+  p "creating table"
+  ['ft_ratings', 'ft_ratings_test'].each do |database|
+    connection = PG.connect(dbname: database)
+    connection.exec("CREATE TABLE ratings(id SERIAL PRIMARY KEY, score int);")
+  end
+end
+
 # namespace :db do
   task :create do
     p "Creating databases..."
