@@ -8,6 +8,7 @@ class RateFT < Sinatra::Base
   run! if app_file == $0
 
   get '/' do
+    p 'made it to the homepage'
     erb(:index)
   end
 
