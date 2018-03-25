@@ -1,4 +1,4 @@
-FROM ruby:2.3.1-slim
+FROM ruby:2.5.0-slim
 MAINTAINER Jennifer Shepherd
 
 RUN apt-get update -qq && apt-get install -y build-essential
@@ -12,4 +12,4 @@ RUN bundle install
 ADD . $APP_ROOT
 
 EXPOSE 80
-CMD ["bundle", "exec", "rackup", "config.ru", "-p", "80", "-s", "-o", "0.0.0.0"]
+CMD ["bundle", "exec", "rackup", "config.ru", "-p", "80", "-s", "thin", "-o", "0.0.0.0"]
