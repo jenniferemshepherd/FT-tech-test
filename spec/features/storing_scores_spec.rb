@@ -8,6 +8,6 @@ feature 'viewing scores' do
   scenario 'A user can see stats on previous entries on the thank you page' do
     visit('/')
     store_many_ratings
-    expect(page).to have_content "33%"
+    expect(page).to have_content "35%"
   end
 end
