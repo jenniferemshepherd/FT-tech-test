@@ -3,6 +3,8 @@ FT Cloud Engineer Technical Exercise
 
 [![Build Status](https://travis-ci.org/jenniferemshepherd/FT-tech-test.svg?branch=master)](https://travis-ci.org/jenniferemshepherd/FT-tech-test)
 
+[App in the cloud](https://ft-tech-test-jshepherd.herokuapp.com/)
+
 Brief Summary of Approach
 -------
 
@@ -50,8 +52,6 @@ Technologies Used:
 * rake
 * rubocop
 * thin (for server and docker potential)
-
-## Overall Process
 
 ## Process
 
