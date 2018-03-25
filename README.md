@@ -26,6 +26,8 @@ CREATE TABLE ratings(id SERIAL PRIMARY KEY, score int);
 * Run '$ rackup' and navigate to localhost:9292 in your browser
 * To test run 'rspec'
 
+N.B. requires ruby version 2.4.1 and the bundler gem
+
 User stories
 --------
 ```
