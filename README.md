@@ -7,6 +7,11 @@ FT Cloud Engineer Technical Exercise
 
 Brief Summary of Approach
 -------
+I chose Ruby with a Sinatra framework to build this app, and used the pg gem to interact with a postgres database from the app itself.  I test drove the I deployed to heroku as I was familiar with having used heroku previously.  This was my first time integrating a database into the deployment of a Heroku app.
+
+Database development
+
+choice of cloud services
 
 Instructions
 -------
