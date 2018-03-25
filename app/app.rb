@@ -1,5 +1,4 @@
 require 'sinatra/base'
-require 'sinatra/sequel'
 require './app/models/rating'
 require './database_connection_setup'
 
@@ -8,7 +7,6 @@ class RateFT < Sinatra::Base
   run! if app_file == $0
 
   get '/' do
-    p 'made it to the homepage'
     erb(:index)
   end
 
