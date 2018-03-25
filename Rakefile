@@ -8,7 +8,6 @@ RSpec::Core::RakeTask.new(:spec) do |t|
 end
 task default: :spec
 
-
 task :test_database_setup do
   p "Cleaning database..."
 
@@ -28,16 +27,3 @@ task :create_table do
     connection.exec("CREATE TABLE ratings(id SERIAL PRIMARY KEY, score int);")
   end
 end
-
-# namespace :db do
-  task :create do
-    p "Creating databases..."
-
-    ['ft_ratings', 'ft_ratings_test'].each do |database|
-      connection = PG.connect
-      connection.exec("CREATE DATABASE #{ database };")
-      connection = PG.connect(dbname: database)
-      connection.exec("CREATE TABLE ratings(id SERIAL PRIMARY KEY, score int);")
-    end
-  end
-# end
