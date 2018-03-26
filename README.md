@@ -11,7 +11,7 @@ I chose Ruby with a Sinatra framework to build this app, and used the pg gem to 
 
 I did further research on docker and aws as I wanted to try a new way of deploying the app.  This was interesting and I would be keen to discuss some of the thoughts I had during this research during an interview.  There was so much to learn and I imagine pairing to learn it would be more fun!
 
-See more on my approach [below](Process).
+See more on my approach [below](#Process).
 
 Instructions
 -------
