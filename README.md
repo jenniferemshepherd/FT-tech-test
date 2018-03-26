@@ -48,11 +48,16 @@ I would like to leave my rating on a website hosted in the cloud
 As a User
 So that I can compare my experience with others' after I have left a rating
 I would like to view all of the ratings left
+
+As a User
+So that I can have consistent experience when interacting with FT products
+I would like to see FT styling
 ```
 
 Technologies Used:
 --------
 * Sinatra
+* PostgreSQL
 * RSpec
 * Capybara
 * pg
