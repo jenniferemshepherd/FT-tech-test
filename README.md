@@ -69,7 +69,7 @@ Technologies Used:
 
 * Whilst the app itself was simple enough, I experienced a wave of imposter syndrome when I sat down to plan this project.  After writing out lists of steps/tasks and diagramming, I felt more confident that I knew where to begin and that I had, in fact, learned how to code in the last 11 weeks!  I am extremely pleased with what I achieved in the time I had to spend on this and am proud of what I built.
 
-* Having diagrammed the simple app, I decided to use Ruby.  It was important to test-drive the app and I current feel most confident doing this in Ruby as I have experience with the Sinatra framework.
+* Having diagrammed the simple app, I decided to use Ruby.  It was important to test-drive the app and currently I feel most confident doing this in Ruby as I have experience with the Sinatra framework.
 
 * I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations. I focussed on the first requirements to hit MVP, planning to extend later with the optional extras.  I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
 
