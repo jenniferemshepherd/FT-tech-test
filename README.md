@@ -71,9 +71,9 @@ Technologies Used:
 
 * Having diagrammed the simple app, I decided to use Ruby.  It was important to test-drive the app and I current feel most confident doing this in Ruby as I have experience with the Sinatra framework.
 
-* I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations. I focussed on the first requirements to hit MVP, planning to extend later with the optional extras.
+* I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations. I focussed on the first requirements to hit MVP, planning to extend later with the optional extras.  I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
 
-* I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
+* I test drove development by working from the controller and rating model, and then refactoring out into views.
 
 * I chose PostgreSQL for my database as I felt reasonably familiar with SQL and wanted to keep things simple.  I used the pg gem to interact with the database from within my ruby code, but keep the interactions verbose.  I refactored the connection with the database into its own class so that I could keep the ratings and controller doing their own actions.  I also installed tableplus onto my macbook so that I could keep an eye on the database without having to constantly interact through psql in my command line.  I hadn't used it before but it did speed up my sanity checks.
 
@@ -95,3 +95,7 @@ Technologies Used:
 * Next steps:
 - I didn't spend much time on the actual features, as these are simple to adjust.  Perhaps a numbering system that is consistent with the ratings page would be more helpful.  An average score was what I had in mind when I picked a scale from -2 to 2 so that it was clear what a positive or negative average showed.
 - I'd like to try doing the app in a javascript stack, now that I have a reference point in ruby for my process.
+
+## Architecture Diagram
+
+![Architecture Diagram](https://i.imgur.com/p65dTWg.png)
