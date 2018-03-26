@@ -11,7 +11,7 @@ I chose Ruby with a Sinatra framework to build this app, and used the pg gem to 
 
 I did further research on docker and aws as I wanted to try a new way of deploying the app.  This was interesting and I would be keen to discuss some of the thoughts I had during this research during an interview.  There was so much to learn and I imagine pairing to learn it would be more fun!
 
-See more on my approach [below](Process).
+See more on my approach <a href='#process'>below</a>.
 
 Instructions
 -------
@@ -85,14 +85,14 @@ Technologies Used:
 
 * I (somewhat belatedly) used Travis for the build and then updated some of the code to ensure that the tests would pass 'remotely' and that Travis could create the database and tables it needed to pass the build.  Travis also highlighted that some gems were present that I'd planned to use briefly during deployment and then had decided against.
 
-* Further research:
+Further research:
 - http://blog.honeybadger.io/how-to-deploy-a-sinatra-app-in-docker-to-amazon-s-ec2-container-service/
 - Required Docker and Python download, successfully executed.
 - Followed this tutorial to successful deployment of a simple sinatra app locally and in the cloud.  Deploying my app required a database so would be more complicated.
 - Explored Docker and set up a Dockerfile.  During the build, my pg gem version was causing problems and the build would exit early.
 - Looked into elastic beanstalk and other aws options.  Seemed like a blackhole...! I timeboxed my research here.  I was interested in following up various alternative deployment routes but also had another interview to prepare for!
 
-* Next steps:
+Next steps:
 - I didn't spend much time on the actual features, as these are simple to adjust.  Perhaps a numbering system that is consistent with the ratings page would be more helpful.  An average score was what I had in mind when I picked a scale from -2 to 2 so that it was clear what a positive or negative average showed.
 - I'd like to try doing the app in a javascript stack, now that I have a reference point in ruby for my process.
 
