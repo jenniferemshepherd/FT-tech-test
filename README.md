@@ -77,7 +77,7 @@ Technologies Used:
 
 * I chose PostgreSQL for my database as I felt reasonably familiar with SQL and wanted to keep things simple.  I used the pg gem to interact with the database from within my ruby code, but keep the interactions verbose.  I refactored the connection with the database into its own class so that I could keep the ratings and controller doing their own actions.  I also installed tableplus onto my macbook so that I could keep an eye on the database without having to constantly interact through psql in my command line.  I hadn't used it before but it did speed up my sanity checks.
 
-* I created a rakefile to clean the database between tests and to speed up both connection and creation of the tables in my database.
+* I created a rakefile to clean the database between tests and to speed up both connection and creation of the tables in my database.  There were no rake tasks available (on top of the 2 I created myself) and I couldn't work out why, so I was unable to use db:create or db:migrate but worked around this by making my own rake methods.
 
 * The styling uses HTML/CSS from Origami.  I followed the tutorial initially which guided me through adjusting the buttons.  I had planned to use icons for the buttons but I really liked the feel of the FT styling so kept the numbered buttons.
 
