@@ -3,15 +3,13 @@ FT Cloud Engineer Technical Exercise
 
 [![Build Status](https://travis-ci.org/jenniferemshepherd/FT-tech-test.svg?branch=master)](https://travis-ci.org/jenniferemshepherd/FT-tech-test)
 
-[App in the cloud](https://ft-tech-test-jshepherd.herokuapp.com/)
+[Jennifer Shepherd FT.com Rating App](https://ft-tech-test-jshepherd.herokuapp.com/)
 
 Brief Summary of Approach
 -------
-I chose Ruby with a Sinatra framework to build this app, and used the pg gem to interact with a postgres database from the app itself.  I test drove the I deployed to heroku as I was familiar with having used heroku previously.  This was my first time integrating a database into the deployment of a Heroku app.
+I chose Ruby with a Sinatra framework to build this app, and used the pg gem to interact with a PostgreSQL database from the app itself.  I test drove the development from routing through to views and finally the database. I deployed to heroku as I was familiar with having used heroku previously.  This was my first time integrating a database into the deployment of a Heroku app.
 
-Database development
-
-choice of cloud services
+See more on my approach [below](Process).
 
 Instructions
 -------
@@ -19,7 +17,7 @@ Instructions
 * Clone this repository
 * Run '$ cd FT-tech-test/'
 * Run '$ bundle' to ensure you have all the libraries
-* You will need to create a local databases 'ft_ratings' and 'ft_ratings_test' in postgres and create the required tables using:
+* You will need to create a local databases 'ft_ratings' and 'ft_ratings_test' in PostgreSQL and create the required tables using:
 ```
 CREATE TABLE ratings(id SERIAL PRIMARY KEY, score int);
 ```
@@ -62,20 +60,20 @@ Technologies Used:
 
 ## Process
 
-* Having diagrammed the simple app and thought about all the things at play, I decided to use Ruby.  It was important to test-drive the app and I feel most confident and experienced doing this in Ruby.
+* Having diagrammed the simple app, I decided to use Ruby.  It was important to test-drive the app and I current feel most confident doing this in Ruby as I have experience with the Sinatra framework.
 
-* First I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations. I focussed on the first requirements to hit MVP, planning to extend later with the optional extras.
+* I wrote out User Stories and compared them to the brief, to ensure I had fully grasped the expectations. I focussed on the first requirements to hit MVP, planning to extend later with the optional extras.
 
 * I diagrammed the action that would take place in the app and where I expected information to be sent during user interaction.
 
-* I test drove the homepage and refactored it into views.
+* I chose PostgreSQL for my db
 
-* Rubocop was installed to ensure I didn't overlook any untidy code.
-
-* The diagram of app architecture directed me in TDDing the actual rating buttons, and what pressing them would do (submit a form).
-
-* DB development
+DB development incl tableplus
 
 * styling using HTML/CSS from Origami.  tutorial showed buttons.  moved onto header, background, fonts, margins, lists etc.
 
-* aws: used a tutorial to learn how to deploy an app using docker.  had to install python to get the aws cli tool
+* aws: used a tutorial to learn how to deploy an app using docker.  Had to install python to get the aws cli tool.
+
+Database development
+
+choice of cloud services
